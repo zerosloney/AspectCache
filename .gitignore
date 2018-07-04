@@ -1,0 +1,10 @@
+obj
+bin
+*.suo
+*.user
+config
+*.pubxml
+PublishProfiles
+.vs
+packages
+Logs
