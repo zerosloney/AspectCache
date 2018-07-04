@@ -11,7 +11,7 @@ namespace Aspect.Web.Demo.Services
         IEnumerable<User> GetUserPageList(int page, int pageSize);
   
         //[StringCachePut("DEMO", "USER", 300, 0)] //根据DEMO：USER：{userId}键更新缓存内容
-        [HashCachePut("DEMO", "USER", 300, null, 0)]
+        [HashCachePut("DEMO", "USER", 300, null, 0)]//根据DEMO：USER键，{userId}字段键获取缓存内容(Hash类型)
         User UpdateUserName(int userId, string userName);
 
         //[StringCacheEvit("DEMO", new[] { "USER" })] //删除DEMO：USER：*
